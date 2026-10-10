@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "node .github/hooks/planloop-deny.mjs",
+        "powershell": "node .github/hooks/planloop-deny.mjs",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
